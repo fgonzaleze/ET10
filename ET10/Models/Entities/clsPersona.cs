@@ -1,8 +1,8 @@
-﻿namespace ET10.Models.Entities
+﻿namespace Entities
 {
-        internal class clsPersona
+        public class clsPersona
         {
-        #region atributos
+            #region atributos
         private int id;
         private string nombre;
         private string apellidos;
@@ -11,13 +11,17 @@
         private string foto;
         private DateTime fechaNac;
         private int idDepartamento;
-            
-            #endregion
 
-            #region constructores
-            public clsPersona() { }
+        #endregion
 
-            public clsPersona(int id, string nombre, string apellidos, string telefono, string foto, DateTime fechaNac, int idDepartamento)
+        #region constructores
+
+        public clsPersona()
+        {
+        
+        }
+
+        public clsPersona(int id, string nombre, string apellidos, string telefono, string foto, DateTime fechaNac, int idDepartamento)
             {
                 this.id = id;
                 this.nombre = nombre;
@@ -46,12 +50,37 @@
                 set { apellidos = value; }
             }
             public string Telefono
-                
+            {
+                get { return telefono; }
+                set { telefono = value; }
+            }
 
+            public string Direccion
+            {
+                get { return direccion; }
+                set { direccion = value; }
+            }
 
-            
+            public string Foto
+            {
+                get { return foto; }
+                set { foto = value; }
+            }
+
+            public DateTime FechaNac
+            {
+                get { return fechaNac; }
+                set { fechaNac = value; }
+            }
+
+            public int IdDepartamento
+            {
+                get { return idDepartamento; }
+                set { idDepartamento = value; }
+            }
+
             #endregion
 
-        }
+    }
     }
 
