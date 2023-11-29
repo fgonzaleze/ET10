@@ -9,21 +9,17 @@ DAL
 	Handlers
 		clsHandlersPersonaDAL
 			int deletePersonaDAL(int id)
-			int updatePersonaDal(int id, int IDDEpartamento)
-			int createPersonaDAL(int id, string nombre, string apellidos, string direcccion, string telf, string foto, DateTime fechaNac, int idDepartamento)
-			int readPersonaDAL(int id, string nombre, string apellidos, string direcccion, string telf, string foto, DateTime fechaNac, int idDepartamento)
+			int updatePersonaDal(int id, ??int IDDEpartamento)
+			int createPersonaDAL(int id, string nombre, string apellidos, string direcccion, string telf, string foto, DateTime fechaNac, ??int idDepartamento)
+			int readPersonaDAL(int id, string nombre, string apellidos, string direcccion, string telf, string foto, DateTime fechaNac, ??int idDepartamento)
 
 UI
 	Controllers
 		HomeController
 
 	Models
-		ViewModels
-			clsListaPersonasVM
-			clsCreateVM
-			clsReadVM
-			clsUpdateVM
-			clsDeleteVM
+		ViewModels ??
+
 
 	Views
 		clsListaPersonas
